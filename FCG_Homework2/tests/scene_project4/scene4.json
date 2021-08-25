@@ -1,0 +1,188 @@
+{
+  "asset": {
+    "copyright": "Model by Fabio Pellacini from github.com/~xelatihy/yocto-gl"
+  },
+  "cameras": {
+    "default": {
+      "lens": 0.05,
+      "aperture": 0.0,
+      "aspect": 2.4,
+      "lookat": [0.55, 0.1, -1.05, -0.05, 0.15, -0.125, 0, 1, 0]
+    }
+  },
+  "environments": {
+    "sky": {
+      "emission": [1, 1, 1],
+      "emission_tex": "skywinter"
+    }
+  },
+  "instances": {
+    "floor": {
+      "shape": "floor",
+      "material": "floor"
+    },
+	"carrozzeria": {
+      "shape": "carrozzeria",
+      "frame": [
+	0, 0, 0.0009,
+	  0.0009, 0, 0,
+	  0, 0.0009, 0,
+	  0, 0, 0],
+	  "displacement" : 0,
+      "material": "carrozzeria"
+    },
+	"cerchioni": {
+      "shape": "cerchioni",
+      "frame": [
+     0, 0, 0.0009,
+	  0.0009, 0, 0,
+	  0, 0.0009, 0,
+	  0, 0, 0],
+	  "displacement" : 0,
+      "material": "cerchioni"
+    },
+	"fanali": {
+      "shape": "fanali",
+      "frame": [
+	0, 0, 0.0009,
+	  0.0009, 0, 0,
+	  0, 0.0009, 0,
+	  0, 0, 0],
+	  "displacement" : 0,
+      "material": "fanali"
+    },
+	"luci": {
+      "shape": "luci",
+      "frame": [
+	0, 0, 0.0009,
+	  0.0009, 0, 0,
+	  0, 0.0009, 0,
+	  0, 0, 0],
+	  "displacement" : 0,
+      "material": "luci"
+    },
+	"partenera": {
+      "shape": "partenera",
+      "frame": [
+	 0, 0, 0.0009,
+	  0.0009, 0, 0,
+	  0, 0.0009, 0,
+	  0, 0, 0],
+	  "displacement" : 0,
+      "material": "partenera"
+    },
+	"vetrodavanti": {
+      "shape": "vetrodavanti",
+      "frame": [
+	 0, 0, 0.0009,
+	  0.0009, 0, 0,
+	  0, 0.0009, 0,
+	  0, 0, 0],
+	  "displacement" : 0,
+      "material": "vetrodavanti"
+    },
+	"albero": {
+      "shape": "tree",
+      "frame": [
+	  0, 0, 0.08,
+	  0.08, 0, 0,
+	  0, 0.08, 0,
+	  -0.65, 0, 0.25],
+	  "displacement" : 0,
+      "material": "albero"
+    },
+	"sfera1": {
+      "shape": "palle_colorate",
+      "frame": [
+	  0, 0, -0.08,
+	  -0.08, 0, 0,
+	  0, 0.08, 0,
+	  -0.65, 0, 0.25],
+	  "displacement" : 0,
+      "material": "sfera"
+    },
+	"sfera2": {
+      "shape": "palle_magiche",
+      "frame": [
+	  0, 0, -0.08,
+	  -0.08, 0, 0,
+	  0, 0.08, 0,
+	  -0.65, 0, 0.25],
+	  "displacement" : 0,
+      "material": "palle_luci"
+    },
+	"regali": {
+      "shape": "regali",
+      "frame": [
+	  0, 0, -0.08,
+	  -0.08, 0, 0,
+	  0, 0.08, 0,
+	  -0.55, 0, 0.15],
+	  "displacement" : 0,
+      "material": "sfera"
+    }
+  },
+  "materials": {
+    "floor": {
+      "color": [0.8, 0.8, 0.8],
+	  "color_tex": "neve"
+    },
+	"carrozzeria": {
+	  "metallic": 1,
+      "color": [1, 1, 1],
+      "roughness": 0
+    },
+	"cerchioni": {
+	  "metallic": 1,
+      "color": [0.564, 0.564, 0.564],
+      "roughness": 0
+    },
+	"fanali": {
+	  "specular": 1,
+	  "transmission": 1,
+      "color": [1, 1, 1],
+      "roughness": 0
+    },
+	"luci": {
+	  "specular": 1,
+	  "emission": [70, 70, 70],
+	  "thin": true,
+      "color": [1, 1, 1],
+      "roughness": 0
+    },
+	"partenera": {
+	  "metallic": 1,
+      "color": [0, 0, 0],
+      "roughness": 0
+    },
+	"albero": {
+      "roughness": 0,
+	  "color_tex": "erba",
+	  "color": [0.627, 0.419, 0.129]
+    },
+	"vetrodavanti": {
+	  "specular": 1,
+	  "transmission": 1,
+      "color": [0, 0, 0],
+      "roughness": 0
+    },
+	"sfera": {
+      "roughness": 0,
+	  "color_tex": "pallarossa",
+	  "color": [0.627, 0.419, 0.129]
+    },
+	"regali": {
+      "roughness": 0,
+	  "color_tex": "blu",
+	  "color": [0.549, 0.294, 0.937]
+    },
+	"palle_luci": {
+	  "specular": 1,
+	  "emission": [9, 3, 1],
+	  "thin": true,
+      "color": [5, 5, 5],
+      "roughness": 0
+    }
+
+  }
+}

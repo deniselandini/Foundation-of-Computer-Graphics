@@ -1,0 +1,185 @@
+{
+  "asset": {
+    "copyright": "Model by Fabio Pellacini from github.com/~xelatihy/yocto-gl"
+  },
+  "cameras": {
+    "default": {
+      "lens": 0.05,
+      "aperture": 0.0,
+      "aspect": 2.4,
+      "lookat": [1, 0.6, 1.5, -0.075, 0.2, -0.05, 0, 1, 0]
+    }
+  },
+  "environments": {
+    "sky": {
+      "emission": [1, 1, 1],
+      "emission_tex": "nero"
+    }
+  },
+  "instances": {
+    "floor": {
+      "shape": "floor",
+      "material": "floor"
+    },
+	"portacenere": {
+      "shape": "portacenere__",
+      "frame": [
+	  0, 0, 0.008,
+	  0.008, 0, 0,
+	  0, 0.0008, 0,
+	 -0.1, 0.265, 0.1],
+	  "displacement" : 0,
+      "material": "portacenere"
+    },
+	"bunny": {
+      "shape": "bunny1__",
+      "frame": [
+	  0, 0, 0.6,
+	  0.6, 0, 0,
+	  0, 0.6, 0,
+	 0.2, 0.05, -0.2],
+	  "displacement" : 0,
+      "material": "bunny"
+    },
+
+	"albero": {
+      "shape": "albero__",
+      "frame": [
+	  0, 0, 0.003,
+	  0.003, 0, 0,
+	  0, 0.003, 0,
+	  -1, 0.36, 0.7],
+	  "displacement" : 0,
+      "material": "albero"
+    },
+	"albero1": {
+      "shape": "albero__",
+      "frame": [
+	  0, 0, 0.003,
+	  0.003, 0, 0,
+	  0, 0.003, 0,
+	  -0.3, 0.36, -1.25],
+	  "displacement" : 0,
+      "material": "albero"
+    },
+	"albero2": {
+      "shape": "albero__",
+      "frame": [
+	  0, 0, 0.003,
+	  0.003, 0, 0,
+	  0, 0.003, 0,
+	  -1, 0.36, 0],
+	  "displacement" : 0,
+      "material": "albero"
+    },
+	"albero3": {
+      "shape": "albero__",
+      "frame": [
+	  0, 0, 0.003,
+	  0.003, 0, 0,
+	  0, 0.003, 0,
+	  -0.7, 0.36, -0.7],
+	  "displacement" : 0,
+      "material": "albero"
+    },	
+	"tavolo": {
+      "shape": "tavolo__",
+      "frame": [
+	  0, 0, 0.003,
+	  0.003, 0, 0,
+	  0, 0.003, 0,
+	  -0.1, 0.2, 0.1],
+	  "displacement" : 0,
+      "material": "tavolo"
+    },
+	"sedia": {
+      "shape": "sedia__",
+      "frame": [
+	  0, 0, 0.003,
+	  0.003, 0, 0,
+	  0, 0.003, 0,
+	  -0.15, 0.2, 0.35],
+	  "displacement" : 0,
+      "material": "sedia"
+    },
+	"sfera": {
+      "shape": "sphere__",
+      "frame": [
+	  0, 0, 1,
+	  1, 0, 0,
+	  0, 1, 0,
+	  -0.6, 0.10, 0.6],
+	  "displacement" : 0,
+      "material": "sfera"
+    },
+	"sfera1": {
+      "shape": "sphere__",
+      "frame": [
+	  0, 0, 1,
+	  1, 0, 0,
+	  0, 1, 0,
+	  -0.6, 0.10, 0.1],
+	  "displacement" : 0,
+      "material": "sfera"
+    },
+	"sfera2": {
+      "shape": "sphere__",
+      "frame": [
+	  0, 0, 1,
+	  1, 0, 0,
+	  0, 1, 0,
+	  -0.35, 0.10, -0.5],
+	  "displacement" : 0,
+      "material": "sfera"
+    },
+	"sfera3": {
+      "shape": "sphere__",
+      "frame": [
+	  0, 0, 1,
+	  1, 0, 0,
+	  0, 1, 0,
+	  0, 0.10, -0.9],
+	  "displacement" : 0,
+      "material": "sfera"
+    }
+  },
+  "materials": {
+    "floor": {
+      "color": [0.7, 0.7, 0.7],
+      "color_tex": "erba"
+    },
+	"portacenere": {
+	"specular": 1,
+	"transmission": 1,
+	"color": [1, 1, 1],
+    "roughness": 1
+    },
+	"albero": {
+	"color": [0.223, 0.474, 0.196],
+	"trasmission": -1,
+    "roughness": 1
+    },
+	"tavolo": {
+	"color": [1, 1, 1],
+	"color_tex": "legnochiaro",
+    "roughness": 1
+    },
+	"sedia": {
+	"color": [1, 1, 1],
+	"color_tex": "legnochiaro",
+    "roughness": 1
+    },
+	"bunny": {
+	"color": [1, 1, 1],
+	"color_tex": "pelo",
+    "roughness": 1
+    },
+	"sfera": {
+	"specular": 1,
+	"transmission": 1,
+	"emission": [30, 30, 30],
+	"color": [1, 1, 1],
+    "roughness": 1
+    }
+  }
+}

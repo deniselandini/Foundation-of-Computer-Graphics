@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<style>
+		/*! normalize.css v2.1.0 | MIT License | git.io/normalize */
+
+	/* ==========================================================================
+	   HTML5 display definitions
+	   ========================================================================== */
+
+	/**
+	 * Correct `block` display not defined in IE 8/9.
+	 */
+
+	article,
+	aside,
+	details,
+	figcaption,
+	figure,
+	footer,
+	header,
+	hgroup,
+	main,
+	nav,
+	section,
+	summary {
+		display: block;
+	}
+
+	/**
+	 * Correct `inline-block` display not defined in IE 8/9.
+	 */
+
+	audio,
+	canvas,
+	video {
+		display: inline-block;
+	}
+
+	/**
+	 * Prevent modern browsers from displaying `audio` without controls.
+	 * Remove excess height in iOS 5 devices.
+	 */
+
+	audio:not([controls]) {
+		display: none;
+		height: 0;
+	}
+
+	/**
+	 * Address styling not present in IE 8/9.
+	 */
+
+	[hidden] {
+		display: none;
+	}
+
+	/* ==========================================================================
+	   Base
+	   ========================================================================== */
+
+	/**
+	 * 1. Set default font family to sans-serif.
+	 * 2. Prevent iOS text size adjust after orientation change, without disabling
+	 *    user zoom.
+	 */
+
+	html {
+		font-family: sans-serif; /* 1 */
+		-webkit-text-size-adjust: 100%; /* 2 */
+		-ms-text-size-adjust: 100%; /* 2 */
+	}
+
+	/**
+	 * Remove default margin.
+	 */
+
+	body {
+		margin: 0;
+	}
+
+	/* ==========================================================================
+	   Links
+	   ========================================================================== */
+
+	/**
+	 * Address `outline` inconsistency between Chrome and other browsers.
+	 */
+
+	a:focus {
+		outline: thin dotted;
+	}
+
+	/**
+	 * Improve readability when focused and also mouse hovered in all browsers.
+	 */
+
+	a:active,
+	a:hover {
+		outline: 0;
+	}
+
+	/* ==========================================================================
+	   Typography
+	   ========================================================================== */
+
+	/**
+	 * Address variable `h1` font-size and margin within `section` and `article`
+	 * contexts in Firefox 4+, Safari 5, and Chrome.
+	 */
+
+	h1 {
+		font-size: 2em;
+		margin: 0.67em 0;
+	}
+
+	/**
+	 * Address styling not present in IE 8/9, Safari 5, and Chrome.
+	 */
+
+	abbr[title] {
+		border-bottom: 1px dotted;
+	}
+
+	/**
+	 * Address style set to `bolder` in Firefox 4+, Safari 5, and Chrome.
+	 */
+
+	b,
+	strong {
+		font-weight: bold;
+	}
+
+	/**
+	 * Address styling not present in Safari 5 and Chrome.
+	 */
+
+	dfn {
+		font-style: italic;
+	}
+
+	/**
+	 * Address differences between Firefox and other browsers.
+	 */
+
+	hr {
+		-moz-box-sizing: content-box;
+		box-sizing: content-box;
+		height: 0;
+	}
+
+	/**
+	 * Address styling not present in IE 8/9.
+	 */
+
+	mark {
+		background: #ff0;
+		color: #000;
+	}
+
+	/**
+	 * Correct font family set oddly in Safari 5 and Chrome.
+	 */
+
+	code,
+	kbd,
+	pre,
+	samp {
+		font-family: monospace, serif;
+		font-size: 1em;
+	}
+
+	/**
+	 * Improve readability of pre-formatted text in all browsers.
+	 */
+
+	pre {
+		white-space: pre-wrap;
+	}
+
+	/**
+	 * Set consistent quote types.
+	 */
+
+	q {
+		quotes: "\201C" "\201D" "\2018" "\2019";
+	}
+
+	/**
+	 * Address inconsistent and variable font size in all browsers.
+	 */
+
+	small {
+		font-size: 80%;
+	}
+
+	/**
+	 * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+	 */
+
+	sub,
+	sup {
+		font-size: 75%;
+		line-height: 0;
+		position: relative;
+		vertical-align: baseline;
+	}
+
+	sup {
+		top: -0.5em;
+	}
+
+	sub {
+		bottom: -0.25em;
+	}
+
+	/* ==========================================================================
+	   Embedded content
+	   ========================================================================== */
+
+	/**
+	 * Remove border when inside `a` element in IE 8/9.
+	 */
+
+	img {
+		border: 0;
+	}
+
+	/**
+	 * Correct overflow displayed oddly in IE 9.
+	 */
+
+	svg:not(:root) {
+		overflow: hidden;
+	}
+
+	/* ==========================================================================
+	   Figures
+	   ========================================================================== */
+
+	/**
+	 * Address margin not present in IE 8/9 and Safari 5.
+	 */
+
+	figure {
+		margin: 0;
+	}
+
+	/* ==========================================================================
+	   Forms
+	   ========================================================================== */
+
+	/**
+	 * Define consistent border, margin, and padding.
+	 */
+
+	fieldset {
+		border: 1px solid #c0c0c0;
+		margin: 0 2px;
+		padding: 0.35em 0.625em 0.75em;
+	}
+
+	/**
+	 * 1. Correct `color` not being inherited in IE 8/9.
+	 * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+	 */
+
+	legend {
+		border: 0; /* 1 */
+		padding: 0; /* 2 */
+	}
+
+	/**
+	 * 1. Correct font family not being inherited in all browsers.
+	 * 2. Correct font size not being inherited in all browsers.
+	 * 3. Address margins set differently in Firefox 4+, Safari 5, and Chrome.
+	 */
+
+	button,
+	input,
+	select,
+	textarea {
+		font-family: inherit; /* 1 */
+		font-size: 100%; /* 2 */
+		margin: 0; /* 3 */
+	}
+
+	/**
+	 * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+	 * the UA stylesheet.
+	 */
+
+	button,
+	input {
+		line-height: normal;
+	}
+
+	/**
+	 * Address inconsistent `text-transform` inheritance for `button` and `select`.
+	 * All other form control elements do not inherit `text-transform` values.
+	 * Correct `button` style inheritance in Chrome, Safari 5+, and IE 8+.
+	 * Correct `select` style inheritance in Firefox 4+ and Opera.
+	 */
+
+	button,
+	select {
+		text-transform: none;
+	}
+
+	/**
+	 * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+	 *    and `video` controls.
+	 * 2. Correct inability to style clickable `input` types in iOS.
+	 * 3. Improve usability and consistency of cursor style between image-type
+	 *    `input` and others.
+	 */
+
+	button,
+	html input[type="button"], /* 1 */
+	input[type="reset"],
+	input[type="submit"] {
+		-webkit-appearance: button; /* 2 */
+		cursor: pointer; /* 3 */
+	}
+
+	/**
+	 * Re-set default cursor for disabled elements.
+	 */
+
+	button[disabled],
+	html input[disabled] {
+		cursor: default;
+	}
+
+	/**
+	 * 1. Address box sizing set to `content-box` in IE 8/9.
+	 * 2. Remove excess padding in IE 8/9.
+	 */
+
+	input[type="checkbox"],
+	input[type="radio"] {
+		box-sizing: border-box; /* 1 */
+		padding: 0; /* 2 */
+	}
+
+	/**
+	 * 1. Address `appearance` set to `searchfield` in Safari 5 and Chrome.
+	 * 2. Address `box-sizing` set to `border-box` in Safari 5 and Chrome
+	 *    (include `-moz` to future-proof).
+	 */
+
+	input[type="search"] {
+		-webkit-appearance: textfield; /* 1 */
+		-moz-box-sizing: content-box;
+		-webkit-box-sizing: content-box; /* 2 */
+		box-sizing: content-box;
+	}
+
+	/**
+	 * Remove inner padding and search cancel button in Safari 5 and Chrome
+	 * on OS X.
+	 */
+
+	input[type="search"]::-webkit-search-cancel-button,
+	input[type="search"]::-webkit-search-decoration {
+		-webkit-appearance: none;
+	}
+
+	/**
+	 * Remove inner padding and border in Firefox 4+.
+	 */
+
+	button::-moz-focus-inner,
+	input::-moz-focus-inner {
+		border: 0;
+		padding: 0;
+	}
+
+	/**
+	 * 1. Remove default vertical scrollbar in IE 8/9.
+	 * 2. Improve readability and alignment in all browsers.
+	 */
+
+	textarea {
+		overflow: auto; /* 1 */
+		vertical-align: top; /* 2 */
+	}
+
+	/* ==========================================================================
+	   Tables
+	   ========================================================================== */
+
+	/**
+	 * Remove most spacing between table cells.
+	 */
+
+	table {
+		border-collapse: collapse;
+		border-spacing: 0;
+	}
+	@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700|Inconsolata:400,700);
+
+	html {
+		margin: 0;
+		padding: 0;
+	}
+
+	body {
+		margin: 0 auto;
+		padding: 0;
+		width: 600px;
+		font-family: 'Open Sans', sans-serif;
+		font-size: 16px;
+		line-height: 24px;
+	}
+
+	h1 {
+		font-size: 32px;
+		line-height: 48px;
+		margin: 144px 0 24px 0;
+	}
+
+	h2 {
+		font-size: 28px;
+		line-height: 48px;
+		margin: 0 0 24px 0;
+	}
+
+	h3 {
+		font-size: 22px;
+		line-height: 24px;
+		margin: 48px 0 24px 0;
+	}
+
+	p, ul {
+		margin: 0 0 24px 0;
+	}
+
+	ul ul {
+		margin: 0 0 0 0;
+	}
+
+	pre {
+		margin: 0 0 24px 0;
+	}
+
+	code {
+		font-family: Inconsolata, monospace;
+	}
+
+	@media print {
+		body {
+			margin: 72px 72px;
+		}
+		@page {
+			margin: 48px 48px;
+		}
+	}
+
+		</style>
+	</head>
+<body>
+    <h1>HOMEWORK 2: PATH TRACING</h1>
+	<i>Autohor: Denise Landini</i><br>
+	<i>Matricola: 1938388</i><br><br>
+	<h2>Mandatory functionality</h2>
+	<p>In this homework I implement the following features:</p>
+	
+	<ul>
+		<li>
+			<strong>Camera Sampling</strong> in functions <code>sample_camera()</code> and <code>eval_camera()</code>
+		</li>
+		<li>
+			<strong>Naive Path tracing</strong> in function <code>trace_naive()</code>
+		</li>
+		<li><strong>Brdf sampling</strong> in function <code>eval_brdfcos()</code>, <code>sample_brdscos()</code>
+	  and <code>sample_brdfcos_pdf()</code>
+		</li>
+		<li>
+			<strong>Delta handling</strong> in function <code>eval_delta()</code>, <code>sample_delta()</code> and <code>sample_delta_pdf()</code>
+		</li>
+		<li>
+			<strong>Light sampling</strong> in function <code>sample_lights()</code> and <code>sample_lights_pdf()</code>
+		</li>
+		<li>
+			<strong>Path tracing</strong> in function <code>trace_path()</code>.
+		</li>
+	</ul>
+
+	<h2>Extra Credit</h2>
+	<p> For this 8 points I choose:</p>
+	
+	<ul>
+		<li>
+			<strong>Refraction</strong> in all BRDFs functions:<br>
+			I insert the flag of the refraction in:
+			<code>eval_brdfcos</code>,
+			<code>eval_delta</code>,
+			<code>sample_brdfcos</code>,
+			<code>sample_delta</code>,
+			<code>sample_brdfcos_pdf</code>.
+		</li><br>
+		<li><strong>Large Scenes</strong>:<br>
+			I test my renderer for render the supplied large scene.
+			In particular,
+			I render the bistrointerior, bistroexterior, landscape, rungholt and sanmiguel images. 
+			All the images are compiled 1024 times with 1280 for resolution, excepet bistroexterior because it freezer at 464 executions. So I compile it for 256 times at resolution 720. 
+		</li><br>
+		<li><strong>Stratified Sampling 1:</strong><br>
+			I created a new shader named <code>shade_stratified_sampling</code> in which I computed the value of the weight and of the i in a different way. In fact, I considered the function <code>sample_hemisphere_cos</code> to assign a value to the "i" variable, and I use <code>eval_brdfcos</code>/<code>sample_hemisphere_cos_pdf</code> to compute the "weight" variable. Comparing the images with those of <code>shade_naive</code> I notice that compiling the same number of times they are grainier.
+			In particular, you can see the differences in the following images (I report only one example), all the other are in the stratified_sampling_1 folder. <br><br>
+			Stratified:
+			<img src="./out/stratified_sampling_1/07_hair_1280_1024.jpg" style="width: 560px;">
+			Naive:
+			<img src="./out/naive/07_hair_1280_1024.jpg" style="width: 560px;">
+	
+		</li><br>
+
+		<li><strong>MYOS</strong>, make your own scenes:<br>
+			For each scene that I made, I created a new folder in which I inserted the shapes and the textures that I used.
+			I also created a JSON file, in which I entered all the settings
+			necessary in order to create the scene.</li>
+			I create 5 scenes:
+	
+			<ul>
+				<li><strong>Set table</strong></li>
+				This scene is located in the scene_project0 folder. In this scene I wanted to represent a table set for a person, in which 
+				I inserted a chair, a table, a glass, a wine glass, a spoon, thenepkins as objects. 
+				In this case I choose to insert the light coming from the upper left of the scene and I decided to use light colors, like white and pink. 
+				<li><strong>Illuminated garden</strong></li>
+				This scene is located in the scene_project1 folder. In this scene I represented the illuminated garden, in which there are a garden table and a garden chair. In the garden there are 3 trees and 3 lights that illuminate the garden at night. In the dim light on the right side of the garden you can see white-haired rabbit. 
+				<li><strong>Fire breathing dragon</strong></li>
+				This scene is located in the scene_project2 folder. In this scene I represented a dragon with a metallic material. The fire spat out by the dragon is represented by fireballs. The light in addition to coming from the fireballs also comes from the right side od the scene to highlight the scales of the dragon. 
+				<li><strong>Combination of geometries</strong></li>
+				This scene is located in the scene_project3 folder. In this scene I represented two pyramids of balls. The pyramid on the left is made up of metal balls, the second is made up of glass balls. Furtheremore, the peculiarity of this photo is given by the refraction applied to the balls. Even if you don't notic the sky in the image is not black, but it is an image with blach and white sqaudres, like the floor.
+				<li><strong>BMW with illuminated Christmas tree and gifts</strong></li>
+				This scene is located in the scene_project4 folder. This scene is inspired by the Christmas season. The bmw is located in a snowy garden, illuminated by the cloudy sky, the Christmas lights and the headlights of the car.  
+			</ul>
+	</body>
+</html>
