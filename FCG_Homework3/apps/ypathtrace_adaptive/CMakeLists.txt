@@ -1,0 +1,5 @@
+add_executable(ypathtrace_adaptive ypathtrace_adaptive.cpp)
+
+set_target_properties(ypathtrace_adaptive PROPERTIES CXX_STANDARD 17 CXX_STANDARD_REQUIRED YES)
+target_include_directories(ypathtrace_adaptive PUBLIC ${CMAKE_SOURCE_DIR}/libs)
+target_link_libraries(ypathtrace_adaptive yocto yocto_pathtrace)
